@@ -6,7 +6,6 @@ return {
 	opts = {
 		--- see the github doc for the options 
 		bigfile = {enabled = true},
-
 		dashboard= {enabled = true},
 		explorer= {enabled = true},
 		indent= {enabled = true},

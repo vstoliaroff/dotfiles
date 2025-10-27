@@ -1,0 +1,3 @@
+--- This file is only meant to give nvim a hint on the root 
+--- folder for the lua LSP. See the list of root markers in 
+--- nvim/lsp/lua_ls.lua
