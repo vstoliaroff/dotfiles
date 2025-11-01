@@ -46,6 +46,7 @@ vim.keymap.set({ 'n', 'x', 'o' },'<leader>S', function() require('flash').treesi
 vim.keymap.set('n','<leader>ff', function() require('telescope.builtin').find_files() end, {desc='[F]ind [F]iles'})
 vim.keymap.set('n','<leader>b', function() require('telescope.builtin').buffers() end, {desc='[B]uffers'})
 vim.keymap.set('n','<leader>lg', function() require('telescope.builtin').live_grep() end, {desc='[L]ive [G]rep'})
+vim.keymap.set('n','<leader>fc', function() require('telescope.builtin').find_files({search_dirs={'~/dotfiles/nvim'}}) end, {desc='[F]ind [C]onfig Files'})
 
 -- SNACKS
 
