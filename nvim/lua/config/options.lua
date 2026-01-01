@@ -7,6 +7,10 @@ vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
 vim.o.relativenumber = true
+-- Have both relative and absolute line numbers
+vim.o.statuscolumn =
+  "%=%{v:lnum == line('.') ? v:lnum : ''} " ..
+  "%{v:lnum != line('.') ? abs(v:lnum - line('.')) : ''} "
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
@@ -73,3 +77,16 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 -- Make line numbers default
 
+-- help to guess the encoding. 
+-- once the buffer is opened, check the encoding with:
+-- :set fileencodings?
+-- Check if a BOM is available:
+-- :set bomb?
+vim.opt.fileencodings = {
+  "utf-8",
+  "ucs-bom",
+  "utf-16",
+  "utf-16le",
+  "utf-16be",
+  "latin1",
+}

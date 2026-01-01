@@ -9,3 +9,9 @@ New-Item -Path $env:USERPROFILE\AppData\Local\nvim -ItemType SymbolicLink -Value
 ```bash
 ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
+
+## External Dependencies
+
+* R 
+* [ripgrep](https://github.com/BurntSushi/ripgrep)
+
